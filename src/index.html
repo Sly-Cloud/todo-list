@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wbpack Exercise</title>
-</head>
+<script defer src="index.bundle.js"></script><script defer src="print.bundle.js"></script></head>
 <body>
-    <h1>Hello webpack!</h1>
+    <main id="app" class="app">
+        <header class="header flex-row">
+          <h1>Today's To Do</h1>
+          <i class="fas fa-sync-alt"></i>
+        </header>
+        <form class="form flex-row" id="form">
+          <input type="text" id="input" placeholder="List an activity" autocomplete="on" class="input">
+          <button type='submit'><i class="fas fa-level-down-alt"></i></button> 
+        </form>
+        <ul id="list"></ul>
+        <footer class="footer flex-row">
+          <button class="clear-btn" id="clear-btn">Clear completed</button>
+        </footer>
+      </main>
 </body>
 </html>
-
